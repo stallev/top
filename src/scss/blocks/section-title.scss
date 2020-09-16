@@ -1,2 +1,25 @@
 .section-title{
+  position: relative;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+  color: #434343;
+  text-transform: uppercase;
+  &--service-order{
+    position: relative;
+    margin-bottom: 96px;
+    &::before{
+      position: absolute;
+      content: "";
+      display: block;
+      top: -45px;
+      right: -168px;
+      width: 227px;
+      height: 173px;
+      background-image: url(../img/decor/dots.svg);
+      background-repeat: no-repeat;
+    }
+  }
 }

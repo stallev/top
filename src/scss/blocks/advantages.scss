@@ -1,0 +1,45 @@
+.advantages{
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
+    margin-bottom: 180px;
+  }
+  &__item{
+    width: 409px;
+    padding: 155px 40px 50px 40px;
+    background: #F6F6F6;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    &--1{
+      background-image: url(../img/decor/clock-icon.svg);
+      background-size: 63px 63px;
+      background-position-y: 58px;
+    }
+    &--2{
+      background-image: url(../img/decor/lamp.svg);
+      background-size: 69px 83px;
+      background-position-y: 39px;
+    }
+    &--3{
+      background-image: url(../img/decor/wallet.svg);
+      background-size: 75px 75px;
+      background-position-y: 52px;
+    }
+  }
+  &__text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #696969;
+  }
+}
+
+@media (max-width: $desctop-width) {
+
+}
+@media (max-width: $tablet-width) {
+    
+}

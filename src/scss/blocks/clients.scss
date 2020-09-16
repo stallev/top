@@ -1,0 +1,14 @@
+.clients{
+  &__list{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: $desctop-width) {
+
+}
+@media (max-width: $tablet-width) {
+  
+}

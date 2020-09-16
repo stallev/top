@@ -1,0 +1,44 @@
+.service-order{
+  margin-top: 196px;
+  margin-bottom: 141px;
+  padding-top: 90px;
+  background: #F7F7F7;
+  &__form{
+    padding-bottom: 117px;
+  }
+  &__form-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-input-field{
+    display: block;
+    padding: 20px 26px;
+    width: 336px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #AEAEAE;
+  }
+  &__form-submit-field{
+    display: block;
+    padding: 20px 0;
+    width: 247px;
+    background: #FFC406;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+  }
+}
+@media (max-width: $desctop-width) {
+
+}
+@media (max-width: $tablet-width) {
+  
+}

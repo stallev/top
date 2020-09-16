@@ -1,0 +1,43 @@
+.about-us{
+  &__content{
+    position: relative;
+    margin-bottom: 180px;
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      left: -120px;
+      top: -67px;
+      width: 227px;
+      height: 173px;
+      background-image: url(../img/decor/dots.svg);
+      background-repeat: no-repeat;
+      transform: rotate(-90deg);
+    }
+  }
+  &__image-block{
+    position: absolute;
+    width: 570px;
+    left: -52px;
+    top: 60px;
+  }
+  &__description{
+    margin-left: 245px;
+    padding: 133px 92px 133px 329px;
+    background: #F8F8F8;
+  }
+  &__text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    color: #454545;
+  }
+
+}
+@media (max-width: $desctop-width) {
+
+}
+@media (max-width: $tablet-width) {
+  
+}
