@@ -1,2 +1,9 @@
 .header{
+  &__upper{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__upper-hamb{
+    display: none;
+  }
 }

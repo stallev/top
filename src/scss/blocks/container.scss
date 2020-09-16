@@ -9,4 +9,7 @@
   }
 }
 @media (min-width: $desctop-width) {
+    .container{
+        width: $desctop-width;
+    }
 }

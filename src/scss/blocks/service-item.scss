@@ -1,0 +1,75 @@
+.service-item{
+    display: flex;
+    &__text-content{
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 100px;
+    }
+    &__type{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #DCDCDC;
+    }
+    &__title{
+      margin-top: 8px;
+      margin-bottom: 15px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 49px;
+      color: #434343;
+      text-transform: uppercase;
+    }
+    &__description{
+      width: 375px;
+      margin-bottom: 5px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #555555;
+    }
+    &__form-input-field{
+      visibility: hidden;
+    }
+    &__form-submit-field{
+      display: block;
+      width: 247px;
+      padding: 19px 10px;
+      background: #FFC406;
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #333333;
+    }
+    &__image-wrapper{
+      display: flex;
+      justify-content: flex-end;
+      width: 616px;
+      height: 615px;
+    }
+    &__image{
+      object-fit: contain;
+    }
+
+}
+@media (max-width: $desctop-width) {
+  .service-item{}
+}
+@media (max-width: $tablet-width) {
+  .service-item{}
+}
+
+
+
+@media (max-width: $desctop-width) {
+
+}
+@media (max-width: $tablet-width) {
+    
+}

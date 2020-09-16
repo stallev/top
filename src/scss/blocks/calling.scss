@@ -1,0 +1,37 @@
+.calling{
+  display: flex;
+  align-items: center;
+  &__link{
+    position:relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    &::before{
+      position: absolute;
+      display: block;
+      content: "";
+      left: -20px;
+      top: 2px;
+      width: 15px;
+      height: 15px;
+      background-image: url(../img/decor/phone-icon.svg);
+    }
+  }
+  &__request{
+    display: block;
+    margin-left: 10px;
+    width: 240px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    border: 2px solid #FFC406;
+    box-sizing: border-box;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+  }
+}
