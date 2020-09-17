@@ -1,2 +1,76 @@
 .footer{
+  padding-bottom: 50px;
+  &__org-text{
+    display: flex;
+    flex-direction: column;
+  }
+  &__org-text-unp,
+  &__org-text-copyright{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #C4C4C4;
+  }
+  &__service-list{
+    display: flex;
+    flex-direction: column;
+  }
+  &__service-list-link{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #797979;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+  }
+  &__info-work-time{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  &__info-work-time-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #404040;
+  }
+  &__info-work-time-value{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #404040;
+  }
+  &__info-social-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #404040;
+  }
+  &__info-instagram-link{
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    top: 9px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/decor/instagram.svg);
+    background-repeat: no-repeat;
+  }
+  &__info--mailto-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #404040;
+  }
 }

@@ -19,4 +19,20 @@
     line-height: 22px;
     color: #474747;
   }
+  &--footer{
+    width: auto;
+  }
+  &__list--footer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: initial;
+    align-items: flex-start;
+  }
+  &__item--footer{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  &__link--footer{
+    text-align: left;
+  }
 }
