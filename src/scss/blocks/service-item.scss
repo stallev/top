@@ -49,9 +49,9 @@
     }
     &__image-wrapper{
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       width: 616px;
-      height: 615px;
+      height: 615px;      
     }
     &__image{
       object-fit: contain;

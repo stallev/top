@@ -1,9 +1,28 @@
 .header{
+  padding-top: 60px;
   &__upper{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 70px;
   }
   &__upper-hamb{
     display: none;
+  }
+  &__bottom{
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      display: block;
+      right: -71px;
+      top: 80px;
+      width: 227px;
+      height: 173px;
+      background-image: url(../img/decor/dots.svg);
+      background-repeat: no-repeat;
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(0deg);
+      z-index: -1;
+    }
   }
 }

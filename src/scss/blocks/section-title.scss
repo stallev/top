@@ -7,6 +7,39 @@
   line-height: 59px;
   color: #434343;
   text-transform: uppercase;
+  &::after{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 25px;
+    height: 20px;
+    background-color: #FED313;
+    z-index: -1;
+  }
+  &--advantages{
+    &::after{
+      left: 628px;
+      width: 417px;
+    }
+  }
+  &--about-us{
+    &::after{
+      left: 677px;
+      width: 131px;
+    }
+  }
+  &--services{
+    &::after{
+      left: 642px;
+      width: 180px;
+    }
+  }
+  &--clients{
+    &::after{
+      left: 599px;
+      width: 341px;
+    }
+  }
   &--service-order{
     position: relative;
     margin-bottom: 96px;

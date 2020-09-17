@@ -1,0 +1,12 @@
+.service{
+  &__wrapper{
+    position: relative;
+    &::after{
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background: #F5F5F5;
+    }
+  }
+}
