@@ -1,7 +1,6 @@
-console.log(125);
 $(document).ready(function(){
-  $('.sliders').slick({
-   /*arrows: true,
+  $('.slider').slick({
+   arrows: true,
     dots: true,
     //adaptiveHeight: false,
     slidesToShow: 1,
@@ -13,6 +12,9 @@ $(document).ready(function(){
     autoplay: false,
     autoplaySpeed: 1500,
     pauseOnFocus: true,
-    pauseOnHover: true,*/
+    pauseOnHover: true,
   });
+});
+$(document).ready(function(){
+  $('.slider').bxSlider();
 });
