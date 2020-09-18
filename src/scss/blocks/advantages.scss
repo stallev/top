@@ -1,10 +1,7 @@
 .advantages{
-  margin-top: 150px;
   &__list{
     display: flex;
     justify-content: space-between;
-    margin-top: 115px;
-    margin-bottom: 180px;
   }
   &__item{
     width: 409px;
@@ -39,7 +36,24 @@
 }
 
 @media (max-width: $desctop-width) {
-
+  .advantages{
+    &__list{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item{
+      margin-bottom: 46px;
+      padding: 143 31px 52px;
+      width: 307px;
+    }
+    &__text{
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .advantages__item:last-of-type{
+    margin-bottom: 0;
+  }
 }
 @media (max-width: $tablet-width) {
     

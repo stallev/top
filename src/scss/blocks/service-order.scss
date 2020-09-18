@@ -1,6 +1,4 @@
 .service-order{
-  margin-top: 196px;
-  margin-bottom: 141px;
   padding-top: 90px;
   background: #F7F7F7;
   &__form{
@@ -37,6 +35,36 @@
   }
 }
 @media (max-width: $desctop-width) {
+  .service-order{
+    padding-bottom: 66px;
+    &__form{
+      padding-bottom: 0;
+    }
+    &__form-wrapper{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__form-input-field{
+      margin-bottom: 32px;
+    }
+    &__form-submit-field{
+      position: relative;
+      width: 336px;
+      margin-bottom: 0;
+    }
+  }
+  .service-order__form-submit-field::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 114px;
+    right: -85px;
+    width: 193px;
+    height: 181px;
+    background-size: 49%;
+    background-image: url(../img/decor/dots.svg);
+    background-repeat: no-repeat;
+  }
 
 }
 @media (max-width: $tablet-width) {

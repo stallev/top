@@ -17,24 +17,30 @@
     z-index: -1;
   }
   &--advantages{
+    margin: 180px 0 115px;
     &::after{
       left: 628px;
       width: 417px;
     }
   }
   &--about-us{
+    margin: 180px 0 50px;
     &::after{
       left: 677px;
       width: 131px;
     }
   }
   &--services{
+    margin-top: 180px;
+    margin-bottom: 103px;
     &::after{
       left: 642px;
       width: 180px;
     }
   }
   &--clients{
+    margin-top: 113px;
+    margin-bottom: 141px;
     &::after{
       left: 599px;
       width: 341px;
@@ -54,5 +60,68 @@
       background-image: url(../img/decor/dots.svg);
       background-repeat: no-repeat;
     }
+  }
+}
+@media (max-width: $desctop-width) {
+  .section-title{
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .section-title::after{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 19px;
+    height: 14px;
+    background-color: #FED313;
+    z-index: -1;
+  }
+  .section-title--advantages{
+    margin: 94px 0 49px;
+  }
+  .section-title--advantages::after{
+    left: 310px;
+    width: 379px;
+  }
+  .section-title--about-us{
+    margin: 81px 0 58px;
+  }
+  .section-title--about-us::after{
+    left: 384px;
+    width: 64px;
+  }
+  .section-title--services{
+    margin: 80px 0 79px;
+  }
+  .section-title--services::after{
+    left: 370px;
+    width: 91px;
+  }
+  .section-title--service-order{
+    margin: 65px 0 49px;
+  }
+  .section-title--service-order::before{
+    top: 114px;
+    right: -85px;
+    width: 193px;
+    height: 181px;
+    background-size: 49%;
+    background-image: url(../img/decor/dots.svg);
+    background-repeat: no-repeat;
+  }
+  .section-title--service-order::after{
+    top: -45px;
+    left: -68px;
+    width: 227px;
+    height: 173px;
+    background-image: url(../img/decor/dots.svg);
+    background-repeat: no-repeat;
+  }
+  .section-title--clients{
+    margin: 80px 0 62px;
+  }
+  .section-title--clients::after{
+    left: 331px;
+    width: 215px;
   }
 }

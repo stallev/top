@@ -1,13 +1,14 @@
 .services{
-  margin-bottom: 196px;
   &__list{
     display: flex;
     justify-content: space-between;
-    margin-top: 103px;
   }
 }
 @media (max-width: $desctop-width) {
-
+  .services__list{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: $tablet-width) {
   

@@ -36,3 +36,18 @@
     text-align: left;
   }
 }
+@media (max-width: $desctop-width) {
+  .nav--header{
+    display: none;
+  }
+  .nav__item--footer{
+    flex-grow: 0;
+  }
+  .nav__list--footer{
+    width: 212px;
+  }
+  .nav__link--footer{
+    font-size: 16px;
+    line-height: 32px;
+  }
+}

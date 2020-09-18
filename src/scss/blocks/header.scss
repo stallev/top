@@ -26,3 +26,44 @@
     }
   }
 }
+@media (max-width: $desctop-width) {
+  .header{
+    &__upper{
+      padding-bottom: 30px;
+    }
+    &__upper-hamb{
+      display: block;
+      position: relative;
+      order: 3;
+      width: 30px;
+      height: 14px;
+      border-top: 1px solid #323232;
+      &::before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 23px;
+        height: 1px;
+        background-color: #323232;
+      }
+      &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 0;
+        width: 13px;
+        height: 1px;
+        background-color: #323232;
+      }
+    }
+    &__bottom{
+      &::after{
+        right: -200px;
+        top: 80px;
+      }
+    }
+  }
+}

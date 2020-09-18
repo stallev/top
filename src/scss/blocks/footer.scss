@@ -1,5 +1,10 @@
 .footer{
   padding-bottom: 50px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+  }
   &__org-text{
     display: flex;
     flex-direction: column;
@@ -34,20 +39,18 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #404040;
   }
   &__info-work-time-text{
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    color: #404040;
+    
   }
   &__info-work-time-value{
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #404040;
   }
   &__info-social-text{
     font-style: normal;
@@ -67,10 +70,51 @@
     background-repeat: no-repeat;
   }
   &__info--mailto-link{
+    position: relative;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #404040;
+    &::before{
+      position: absolute;
+      display: block;
+      content: "";
+      top: 4px;
+      left: -26px;
+      width: 23px;
+      height: 23px;
+      background-image: url(../img/decor/mail-icon.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media (max-width: $desctop-width) {
+  .footer{
+    &__content{
+      flex-wrap: wrap;
+    }
+    &__info--1{
+      order: 2;
+    }
+    &__info--contacts{
+      padding-left: 27px;
+    }
+    &__service-list{
+      margin-bottom: 50px;
+      &-link{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__info--mailto-link{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__info-work-time{
+      width: 211px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }

@@ -50,8 +50,8 @@
     &__image-wrapper{
       display: flex;
       justify-content: flex-start;
-      width: 616px;
-      height: 615px;      
+      width: 616px;     
+      margin-bottom: 80px;
     }
     &__image{
       object-fit: contain;
@@ -59,7 +59,32 @@
 
 }
 @media (max-width: $desctop-width) {
-  .service-item{}
+  .service-item{
+    &__text-content{
+      padding-top: 40px;
+    }
+    &__image-wrapper{
+      margin-bottom: 20px;
+    }
+    &__type{
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__description{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__form-submit-field{
+      width: 193px;
+      padding: 15px 0;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
 }
 @media (max-width: $tablet-width) {
   .service-item{}

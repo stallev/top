@@ -2,5 +2,16 @@
   &--footer{
     display: flex;
     flex-direction: column;
+    margin-right: 76px;
+  }
+}
+@media (max-width: $desctop-width) {
+  .logo{
+    &--header{
+      order: 1;
+    }
+    &--footer{
+      margin-bottom: 50px;
+    }
   }
 }

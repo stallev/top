@@ -72,7 +72,9 @@
   background: #FFD600;
 }
 @media (max-width: $desctop-width) {
-
+  .card{
+    margin-bottom: 71px;
+  }
 }
 @media (max-width: $tablet-width) {
   

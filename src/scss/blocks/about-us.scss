@@ -1,7 +1,6 @@
 .about-us{
   &__content{
     position: relative;
-    margin-bottom: 180px;
     &::before{
       position: absolute;
       content: '';
@@ -36,7 +35,26 @@
 
 }
 @media (max-width: $desctop-width) {
-
+  .about-us{
+    &__image-block{
+      width: 340px;
+      left: -32px;
+      top: 50px;
+    }
+    &__text{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__description{
+      padding: 55px 25px 50px 81px;
+    }
+  }
+  .about-us__content::before{
+    left: -120px;
+    top: -67px;
+    width: 227px;
+    height: 173px;
+  }
 }
 @media (max-width: $tablet-width) {
   

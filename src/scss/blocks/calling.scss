@@ -58,3 +58,29 @@
     color: #333333;
   }
 }
+@media (max-width: $desctop-width) {
+  .calling{
+    order: 2;
+    margin-left: 120px;
+    width: 400px;
+    justify-content: space-between;
+    &__link{
+      font-size: 14px;
+      line-height: 17px;
+      &--footer{
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    &__request{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .calling--header::after{
+    right: -753px;
+    top: -65px;
+    width: 1000px;
+    height: 615px;
+  }
+}
