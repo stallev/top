@@ -57,5 +57,22 @@
   }
 }
 @media (max-width: $tablet-width) {
+  .about-us{
+    margin-bottom: 20px;
+    &__description{
+      padding: 10px 5px 150px;
+      margin: 0 auto;
+    }
+    &__image-block{
+      width: 215px;
+      left: 1px;
+      top: 352px;
+    }
+  }
+  .about-us__content::before{
+    left: 156px;
+    top: 187px;
+    background-size: 25%;
+  }
   
 }

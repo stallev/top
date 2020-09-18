@@ -84,3 +84,32 @@
     height: 615px;
   }
 }
+@media (max-width: $tablet-width) {
+  .calling{
+    margin-left: 12px;
+    padding-left: 18px;
+    width: 320px;
+    order: 1;
+    justify-content: space-between;
+    &__link{
+      font-size: 12px;
+      line-height: 15px;
+      &--footer{
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    &__request{
+      padding: 9px 0;
+      width: 138px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  .calling--header::after{
+    right: -827px;
+    top: -65px;
+    width: 1000px;
+    height: 466px;
+  }
+}

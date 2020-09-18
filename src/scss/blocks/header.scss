@@ -67,3 +67,27 @@
     }
   }
 }
+@media (max-width: $tablet-width) {
+  .header{
+    &__upper{
+      flex-wrap: wrap;
+      padding-bottom: 5px;
+    }
+    &__upper-hamb{
+      display: block;
+      position: relative;
+      order: 3;
+      width: 30px;
+      height: 14px;
+      margin-top: 25px;
+    }
+    &__bottom{
+      &::after{
+        display: none;
+        right: -200px;
+        top: 80px;
+        background-size: 45%;
+      }
+    }
+  }
+}

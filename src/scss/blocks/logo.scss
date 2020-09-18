@@ -15,3 +15,20 @@
     }
   }
 }
+@media (max-width: $tablet-width) {
+  .logo{
+    &--header{
+      order: 2;
+      width: 106px;
+      height: 36px;
+      margin-top: 25px;
+    }
+    &--footer{
+      margin: 0;
+      order: 3;
+    }
+    &__image--footer{
+      display: none;
+    }
+  }
+}

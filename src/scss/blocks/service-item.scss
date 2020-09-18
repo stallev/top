@@ -87,7 +87,41 @@
   }
 }
 @media (max-width: $tablet-width) {
-  .service-item{}
+  .service-item{
+    position: relative;
+    padding-bottom: 130px;
+    &__text-content{
+      padding-top: 20px;
+    }
+    &__image-wrapper{
+      margin-bottom: 20px;
+    }
+    &__type{
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__title{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__description{
+      width: 218px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__form-submit-field{
+      width: 138px;
+      padding: 9px 0;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__image-wrapper{
+      position: absolute;
+      width: 163px;
+      bottom: -8px;
+      right: 0px;
+    }
+  }
 }
 
 

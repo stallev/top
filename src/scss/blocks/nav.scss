@@ -51,3 +51,10 @@
     line-height: 32px;
   }
 }
+@media (max-width: $tablet-width) {
+  .nav--header{
+  }
+  .nav--footer{
+    display: none;
+  }
+}

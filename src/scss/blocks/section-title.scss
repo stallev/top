@@ -125,3 +125,56 @@
     width: 215px;
   }
 }
+@media (max-width: $tablet-width) {
+  .section-title{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .section-title::after{
+    top: 13px;
+    height: 7px;;
+  }
+  .section-title--advantages{
+    margin: 52px 0 44px;
+  }
+  .section-title--advantages::after{
+    left: 115px;
+    width: 170px;
+  }
+  .section-title--about-us{
+    margin: 63px 0 36px;
+  }
+  .section-title--about-us::after{
+    left: 147px;
+    width: 46px;
+  }
+  .section-title--services{
+    margin: 42px 0 33px;
+  }
+  .section-title--services::after{
+    left: 129px;
+    width: 72px;
+  }
+  .section-title--service-order{
+    margin: 0 0 37px;
+  }
+  .section-title--service-order::before{
+    top: 83px;
+    right: -183px;
+    width: 193px;
+    height: 181px;
+    background-size: 25%;
+    background-image: url(../img/decor/dots.svg);
+    background-repeat: no-repeat;
+  }
+  .section-title--service-order::after{
+    display: none;
+  }
+  .section-title--clients{
+    margin: 80px 0 62px;
+  }
+  .section-title--clients::after{
+    left: 143px;
+    width: 105px;
+  }
+}

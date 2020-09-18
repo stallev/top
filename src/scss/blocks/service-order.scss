@@ -68,5 +68,26 @@
 
 }
 @media (max-width: $tablet-width) {
+  .service-order{
+    padding-top: 33px;
+    &__form-input-field{
+      width: 288px;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 32px;
+      padding: 15px 0 15px 25px;
+    }
+    &__form-submit-field{
+      position: relative;
+      width: 288px;
+      margin-bottom: 0;
+      padding: 15px 0 15px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .service-order__form-submit-field::before{
+    display: none;
+  }
   
 }

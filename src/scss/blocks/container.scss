@@ -87,5 +87,9 @@
     .container{
         width: 360px;
         padding: 0 20px;
+        &--footer{
+          flex-wrap: wrap;
+        }
     }
+    
 }

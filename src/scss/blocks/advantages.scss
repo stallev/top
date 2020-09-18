@@ -56,5 +56,27 @@
   }
 }
 @media (max-width: $tablet-width) {
-    
+  .advantages{
+    &__item{
+      width: 236px;
+      min-height: 156px;
+      padding: 75px 23px 0;
+      &--1{
+        background-size: 33px 33px;
+        background-position-y: 18px;
+      }
+      &--2{
+        background-size: 43px 52px;
+        background-position-y: 17px;
+      }
+      &--3{
+        background-size: 36px 36px;
+        background-position-y: 20px;
+      }
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
 }

@@ -77,5 +77,39 @@
   }
 }
 @media (max-width: $tablet-width) {
-  
+  .card{
+    width: 320px;
+    margin-bottom: 46px;
+    &__title{
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__subtitle{}
+    &__items-list{
+      padding: 21px 20px 20px 40px;
+    }
+    &__item{
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 13px;
+    }
+    &__footer{
+      padding: 26px 71px;
+    }
+    &__description-link{
+      width: 178px;
+      padding: 14px 0;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .card__item::before{
+    left: -18px;
+    top: 1px;
+    width: 15px;
+    height: 11px;
+  }
+  .card:last-of-type{
+    margin-bottom: 0;
+  }
 }
