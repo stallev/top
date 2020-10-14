@@ -19,6 +19,9 @@
     line-height: 22px;
     color: #474747;
   }
+  &__item--header-nav:hover{
+    background-color: #FFDD43;
+  }
   &--footer{
     width: auto;
   }
@@ -53,6 +56,18 @@
 }
 @media (max-width: $tablet-width) {
   .nav--header{
+  }
+  .nav__list{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__item{
+    width: 100%;
+  }
+  .nav__link--header-nav{
+    padding: 5px 0;
+    width: 100%;
+    display: block;
   }
   .nav--footer{
     display: none;

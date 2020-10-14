@@ -28,5 +28,25 @@ $(document).ready(function(){
      autoplaySpeed: 1500,
      pauseOnFocus: true,
      pauseOnHover: true,
+     responsive:[
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+     ]
    });
 });

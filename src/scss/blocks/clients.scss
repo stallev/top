@@ -8,10 +8,20 @@
   &__list-item{
     object-fit: contain;
   }
+  &__slider{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media (max-width: $desctop-width) {
 
 }
 @media (max-width: $tablet-width) {
+  .clients{
+    &__slider{
+      padding: 0;
+      min-height: 100px;
+    }
+  }
   
 }

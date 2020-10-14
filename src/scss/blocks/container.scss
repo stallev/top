@@ -10,9 +10,10 @@
 }
 /*@media (max-width: $desctop-width) {
   .container{
-    width: 1366px;
+    width: 100%;
   }
 }
+
 @media (max-width: 1366px) {
   .container{
     width: 1280px;
@@ -75,7 +76,7 @@
 }*/
 @media (max-width: $desctop-width) {
   .container{
-    width: 854px;
+    width: 100%;
     padding: 0 35px;
     &--footer{
       padding-top: 41px;

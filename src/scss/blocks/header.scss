@@ -1,11 +1,12 @@
 .header{
   padding-top: 60px;
   &__upper{
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding-bottom: 70px;
   }
-  &__upper-hamb{
+  &__upper-hamb, &__upper-cross{
     display: none;
   }
   &__bottom{
@@ -27,14 +28,36 @@
   }
 }
 @media (max-width: $desctop-width) {
+  //расположение блоков при tablet версии
+  .logo--header{
+    order: 1;
+  }
+  .calling--header{
+    order: 2;
+    margin-right: 40px;
+    margin-left: 0;
+  }
+  .nav--header{
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav__link--header-nav{
+    padding: 10px 0;
+  }
+  .header__upper{
+    flex-wrap: wrap;
+  }
   .header{
     &__upper{
       padding-bottom: 30px;
     }
     &__upper-hamb{
       display: block;
-      position: relative;
+      position: absolute;
       order: 3;
+      top: 1px;
+      right: 5px;
       width: 30px;
       height: 14px;
       border-top: 1px solid #323232;
@@ -59,6 +82,38 @@
         background-color: #323232;
       }
     }
+    &__upper-cross{
+      position: absolute;
+      order: 3;
+      top: 22px;
+      right: 5px;
+      width: 30px;
+      height: 30px;
+      &::before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 33px;
+        height: 4px;
+        transform: rotate(45deg);
+        border-radius: 3px;
+        background-color: #454141;
+      }
+      &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 33px;
+        height: 4px;
+        transform: rotate(-45deg);
+        border-radius: 3px;
+        background-color: #454141;
+      }
+    }
     &__bottom{
       &::after{
         right: -200px;
@@ -80,6 +135,9 @@
       width: 30px;
       height: 14px;
       margin-top: 25px;
+    }
+    &__upper-cross{
+      top: 70px;
     }
     &__bottom{
       &::after{
